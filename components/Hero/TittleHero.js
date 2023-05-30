@@ -6,7 +6,7 @@ function TittleHero() {
     <div className=" flex justify-center ">
       <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-2xl md:text-5xl font-semibold drop-shadow-xl tracking-normal text-white">
+          <h2 className="text-4xl md:text-5xl font-semibold drop-shadow-xl tracking-normal text-white">
             Switzerland Has Never
             <br />
             <span className=" leading-[80px]">Been So Affordable</span>
