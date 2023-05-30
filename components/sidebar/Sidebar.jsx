@@ -22,7 +22,7 @@ export default function Example() {
 
   return (
     <Transition.Root show={isToggled} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={handleToggle}>
+      <Dialog as="div" className="relative z-10 " onClose={handleToggle}>
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"

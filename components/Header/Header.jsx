@@ -33,7 +33,7 @@ function Header() {
       </div>
       <div className="py-2.5">
         <ul
-          className={` flex w-max px-2 text-sm lg:text-xl font-light text-zinc-800backdrop-blur `}
+          className={` hidden md:flex md:w-max px-2 text-sm lg:text-xl font-light text-zinc-800backdrop-blur `}
         >
           <NavItem href="/">Day tours</NavItem>
           <NavItem href="/Multi-day">Multi-day tours</NavItem>
