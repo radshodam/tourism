@@ -6,6 +6,7 @@ import swImage3 from "/public/images/natural/swi-3.webp";
 import swImage4 from "/public/images/natural/swi-4.webp";
 import swImage5 from "/public/images/natural/swi-5.webp";
 import swImage6 from "/public/images/natural/swi-6.webp";
+import Profile from "/public/images/profile/profile.jpg";
 import Image from "next/image";
 import { ClockIcon, TicketIcon } from "@heroicons/react/20/solid";
 
@@ -111,10 +112,12 @@ function ProgramsGrid() {
                 </div>
                 <div className="flex justify-start px-6 mb-4">
                   <div>
-                    <img
+                    <Image
                       className="inline-block h-10 w-10 rounded-full ring-8 ring-gray-500 ring-opacity-60"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
+                      src={Profile}
+                      alt="profile"
+                      width={100}
+                      height={100}
                     />
                   </div>
                   <div className="flex flex-col px-4">
