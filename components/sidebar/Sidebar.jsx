@@ -8,8 +8,9 @@ import Navigation from "../Navigation/Index";
 import Profile from "../Profile/Profile";
 import { GetWindowSize } from "../CustomHook/windowSize/GetWindowSize";
 import classNames from "@/functions/classNames";
-import { companyIcon } from "../../public/images/Logo.png";
-import Image from "next/image";
+// import { companyIcon } from "../../public/images/Logo.png";
+// import Image from "next/image";
+
 export default function Example() {
   const isToggled = useSelector((state) => state.toggle.isToggled);
   const dispatch = useDispatch();
@@ -31,7 +32,7 @@ export default function Example() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+          <div className="fixed inset-0 bg-transparent bg-opacity-80 backdrop-blur-sm transition-opacity" />
         </Transition.Child>
 
         <div className="fixed inset-0 overflow-hidden">
@@ -68,13 +69,7 @@ export default function Example() {
                     </div>
                   </Transition.Child>
                   <div className="flex px-6 h-16 shrink-0 items-center ">
-                    <Image
-                      className="h-10 w-auto"
-                      src="/../public/images/Logo.png"
-                      alt="Your Company"
-                      width={100}
-                      height={100}
-                    />
+                    <h3 className="text-red-400 px-3 py-2 text-3xl">Logo</h3>
                   </div>
                   {/* /* ------------- search ------------ */}
                   <div className="px-6">
