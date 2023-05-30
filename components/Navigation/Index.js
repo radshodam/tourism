@@ -26,7 +26,7 @@ const navigation = [
     name: "Projects",
     icon: FolderIcon,
     current: false,
-    submenu: [
+    children: [
       { name: "Project 1", href: "#", icon: ClipboardIcon },
       { name: "project 2", href: "#", icon: ClipboardIcon },
     ],
