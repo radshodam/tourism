@@ -7,7 +7,7 @@ export default function DisclosureNavLink({
   icon: Icon,
   current,
   name,
-  children,
+  submenu,
 }) {
   return (
     <Disclosure as="div">
@@ -35,7 +35,7 @@ export default function DisclosureNavLink({
             />
           </Disclosure.Button>
           <Disclosure.Panel as="ul" className="mt-1 px-2">
-            {children.map((subItem) => (
+            {!submenu?.map((subItem) => (
               <li key={subItem.name}>
                 {/* 44px */}
                 <Disclosure.Button
