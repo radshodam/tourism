@@ -1,9 +1,7 @@
 import classNames from "@/functions/classNames";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import ToggleButton from "../toggleButton/toggleButton";
-import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
 function NavItem({ href, children }) {
   let isActive = useRouter().pathname === href;
 
