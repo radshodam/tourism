@@ -22,8 +22,7 @@ export default function Home() {
       <Header />
       <Sidebar />
       <div>
-        {" "}
-        <section className="relative bg-gradient-to-b h-[5000px] from-[#0c0605] to-[#140a08]">
+        <section className="relative bg-gradient-to-b h-[2500px] from-[#0c0605] to-[#140a08]">
           <div className="flex justify-center flex-col w-full py-16 md:py-24 items-center">
             <h4 className="text-4xl md:text-5xl text-white">Top Programs</h4>
             <h4 className="mx-auto  drop-shadow-xl mt-9 max-w-xl text-xl leading-8 text-gray-200">
@@ -34,7 +33,6 @@ export default function Home() {
           <ProgramsGrid />
         </section>
       </div>
-      
     </>
   );
 }
