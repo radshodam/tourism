@@ -16,7 +16,7 @@ function NavList({ list }) {
                   "border-t border-white mt-1.5 border-opacity-30 mb-10"
               )}
             >
-              {item.submenu ? (
+              {!item.children ? (
                 <NavLink
                   href={item.href}
                   current={item.current}
@@ -27,7 +27,7 @@ function NavList({ list }) {
                 <DisclosureNavLink
                   icon={item.icon}
                   name={item.name}
-                  submenu={item.submenu}
+                  submenu={item.children}
                   current={item.current}
                 />
               )}
